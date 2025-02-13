@@ -3,49 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Instrumentos</title>
+    <title>MúsicaYA! - Página de Instrumentos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Barra de navegación -->
-    <nav>
-        <ul>
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#instrumentos">Instrumentos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+    <!-- Barra de navegación con logo -->
+    <header>
+        <div class="logo">MúsicaYA!</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#guitarras">Guitarras</a></li>
+                <li><a href="#pianos">Pianos</a></li>
+                <li><a href="#baterias">Baterías</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Sección de inicio -->
     <section id="home">
-        <h1>Bienvenidos a la página de Instrumentos</h1>
-        <p>Descubre una variedad de instrumentos musicales.</p>
+        <h1>Bienvenidos a MúsicaYA!</h1>
+        <p>Explora el mundo de la música a través de distintos instrumentos como guitarras, pianos y baterías.</p>
     </section>
 
-    <!-- Sección de instrumentos -->
-    <section id="instrumentos">
-        <h2>Instrumentos</h2>
+    <!-- Sección Guitarras -->
+    <section id="guitarras">
+        <h2>Guitarras</h2>
         <div class="instrumentos-lista">
             <div class="instrumento">
-                <h3>Guitarra</h3>
-                <p>La guitarra es un instrumento de cuerda popular en muchos géneros musicales.</p>
+                <img src="https://d1aeri3ty3izns.cloudfront.net/media/50/509580/1200/preview.jpg" alt="Guitarra Eléctrica">
+                <h3>Guitarra Eléctrica</h3>
+                <p>Las guitarras eléctricas producen sonido amplificado y son esenciales en géneros como rock, blues y metal.</p>
             </div>
             <div class="instrumento">
-                <h3>Piano</h3>
-                <p>El piano es un instrumento de teclas que ha sido fundamental en la música clásica y moderna.</p>
-            </div>
-            <div class="instrumento">
-                <h3>Batería</h3>
-                <p>La batería es el corazón rítmico de muchas bandas de música, desde el rock hasta la música electrónica.</p>
+                <img src="https://lacarnemagazine.com/wp-content/uploads/2020/06/mejores-guitarras-acusticas-web-1200x675.jpg" alt="Guitarra Acústica">
+                <h3>Guitarra Acústica</h3>
+                <p>La guitarra acústica es ideal para música folk, pop y clásica, con un sonido cálido y resonante.</p>
             </div>
         </div>
     </section>
 
-    <!-- Sección de contacto -->
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Si tienes alguna pregunta, no dudes en ponerte en contacto con nosotros.</p>
+    <!-- Sección Pianos -->
+    <section id="pianos">
+        <h2>Pianos</h2>
+        <div class="instrumentos-lista">
+            <div class="instrumento">
+                <img src="img/piano-de-cola.jpg" alt="Piano de Cola">
+                <h3>Piano de Cola</h3>
+                <p>El piano de cola es un instrumento majestuoso, utilizado en música clásica y conciertos profesionales.</p>
+            </div>
+            <div class="instrumento">
+                <img src="img/piano-digital.jpg" alt="Piano Digital">
+                <h3>Piano Digital</h3>
+                <p>El piano digital es una opción versátil y moderna con sonidos programados y funcionalidades electrónicas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Baterías -->
+    <section id="baterias">
+        <h2>Baterías</h2>
+        <div class="instrumentos-lista">
+            <div class="instrumento">
+                <img src="img/bateria-acustica.jpg" alt="Batería Acústica">
+                <h3>Batería Acústica</h3>
+                <p>Compuesta por tambores y platillos, es utilizada en géneros como rock, jazz y música latina.</p>
+            </div>
+            <div class="instrumento">
+                <img src="img/bateria-electronica.jpg" alt="Batería Electrónica">
+                <h3>Batería Electrónica</h3>
+                <p>Ofrece versatilidad con sonidos digitales y es ideal para grabaciones y prácticas silenciosas.</p>
+            </div>
+        </div>
     </section>
 
 </body>
