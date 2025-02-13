@@ -8,8 +8,8 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: #fff;
 }
 
 /* Barra de navegación */
@@ -17,15 +17,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #222;
+    background-color: #8B0000; /* Rojo oscuro */
     padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Estilos del logo */
 .logo {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
-    color: white;
+    color: #FFD700; /* Dorado */
 }
 
 /* Menú de navegación */
@@ -44,17 +45,37 @@ nav ul li a {
     color: white;
     font-size: 18px;
     padding: 10px;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.2s;
 }
 
 nav ul li a:hover {
-    color: #f39c12;
+    color: #FFD700; /* Dorado */
+    transform: scale(1.1);
 }
 
 /* Secciones */
 section {
     padding: 40px;
     text-align: center;
+    background-color: #222; /* Fondo gris oscuro */
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 90%;
+}
+
+/* Títulos */
+h1, h2 {
+    color: #FFD700; /* Dorado */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 /* Lista de instrumentos */
@@ -66,27 +87,44 @@ section {
     margin-top: 20px;
 }
 
+/* Tarjeta de instrumento */
 .instrumento {
-    background-color: white;
+    background-color: #8B0000; /* Rojo oscuro */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     width: 300px;
     text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.instrumento:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(255, 215, 0, 0.4);
 }
 
 .instrumento img {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    border: 2px solid #FFD700; /* Borde dorado */
 }
 
 .instrumento h3 {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 22px;
+    color: #FFD700; /* Dorado */
 }
 
 .instrumento p {
     font-size: 16px;
-    color: #555;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .instrumentos-lista {
+        flex-direction: column;
+        align-items: center;
+    }
 }
